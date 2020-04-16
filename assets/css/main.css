@@ -1,0 +1,88 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    
+}
+
+/* Utilities */
+.templates {
+    display: none;
+}
+
+/* App */
+
+.app {
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    border: 1px solid black;
+    background: #333;
+
+}
+
+.app h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.app input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    outline: none;
+    background: #aaa;
+    border: 0;
+    transition: background, .5s;
+}
+
+.app input::placeholder {
+    color: #666;
+}
+
+.app input:hover,
+.app input:focus {
+    background: #fff;
+
+}
+
+.app .todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.app .todo li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.app .todo li i {
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity, .3s;
+}
+
+.app .todo li i:hover {
+    opacity: 1;
+}
+
